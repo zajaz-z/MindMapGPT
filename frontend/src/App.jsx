@@ -1,17 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 
-console.log("✅ Custom App loaded");
-
-function App() {
-  return (
-    <div>
-      <h1>Hello from my App.jsx!</h1>
-    </div>
-  );
-}
-
-
 function App() {
   const [text, setText] = useState('');
   const [query, setQuery] = useState('');
