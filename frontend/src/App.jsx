@@ -9,17 +9,28 @@ function App() {
 
   const handleEmbed = async () => {
     try {
-      const res = await fetch('http://localhost:8000/embed', {
+      const res = await fetch('http://127.0.0.1:8000/embed', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ text })
       });
+
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`HTTP ${res.status}: ${errText}`);
+      }
+
       const data = await res.json();
-      setMessage(`Stored with ID: ${data.id}`);
+      alert(`Embedded with ID: ${data.id}`);
     } catch (err) {
-      setMessage('Error embedding text.');
+      console.error('Embed error:', err);
+      alert('Error embedding text.');
     }
   };
+
 
   const handleSearch = async () => {
     try {
