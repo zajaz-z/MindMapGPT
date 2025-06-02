@@ -5,7 +5,7 @@ MindMapGPT is a thought-guided neural search engine that turns your curiosity in
 Features
 
 - 🌐 Interactive mind map visualization of related concepts  
-- 🔍 Semantic search powered by embeddings (OpenAI/HuggingFace + FAISS)  
+- 🔍 Semantic search powered by embeddings (OpenAI + FAISS)  
 - ✨ LLM-based summarization for human-friendly node descriptions  
 - 💾 Save, export, and share mind maps  
 - 🧭 Expand any node to go deeper into the topic
@@ -16,7 +16,7 @@ Tech Stack
 |---------------|------------------------------|
 | Frontend      | React, Vite                  |
 | Backend       | Python, FastAPI              |
-| Embeddings    | OpenAI / HuggingFace         |
+| Embeddings    | OpenAI                       |
 | Vector Search | FAISS or Chroma              |
 | Deployment    | Vercel + Render              |
 
