@@ -14,7 +14,7 @@ Tech Stack
 
 | Area          | Tech                         |
 |---------------|------------------------------|
-| Frontend      | React, D3.js or React Flow   |
+| Frontend      | React, Vite                  |
 | Backend       | Python, FastAPI              |
 | Embeddings    | OpenAI / HuggingFace         |
 | Vector Search | FAISS or Chroma              |
