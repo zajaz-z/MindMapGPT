@@ -1,14 +1,14 @@
-# MindMapGPT
+MindMapGPT
 
-MindMapGPT is a thought-guided neural search engine that turns your curiosity into dynamic, visual maps. Explore any topic by typing it in—and instantly get a mind map of related subtopics, summaries, and source links using AI and semantic search.
+MindMapGPT is a search engine that turns any given topic into dynamic, visual maps. Explore by typing it the topic get a mind map of related subtopics, summaries, and source links using AI and semantic search.
 
 Features
 
-- 🌐 Interactive mind map visualization of related concepts  
-- 🔍 Semantic search powered by embeddings (OpenAI + FAISS)  
-- ✨ LLM-based summarization for human-friendly node descriptions  
-- 💾 Save, export, and share mind maps  
-- 🧭 Expand any node to go deeper into the topic
+Interactive mind map visualization of related concepts  
+Semantic search powered by embeddings (OpenAI + FAISS)  
+LLM-based summarization for human-friendly node descriptions  
+Save, export, and share mind maps  
+Expand any node to go deeper into the topic
 
 Tech Stack
 
