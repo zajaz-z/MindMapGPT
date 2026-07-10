@@ -2,28 +2,53 @@ MindMapGPT
 
 MindMapGPT is a search engine that turns any given topic into dynamic, visual maps. Explore by typing it the topic get a mind map of related subtopics, summaries, and source links using AI and semantic search.
 
-Features
+Current Features
 
-Interactive mind map visualization of related concepts  
-Semantic search powered by embeddings (OpenAI + FAISS)  
-LLM-based summarization for human-friendly node descriptions  
-Save, export, and share mind maps  
-Expand any node to go deeper into the topic
+- Generate a starter mind map from any topic
+- Render connected nodes in the browser
+- Select nodes to inspect summaries
+- Store and search text embeddings with FAISS
 
-Tech Stack
+Planned Features
 
-| Area          | Tech                         |
-|---------------|------------------------------|
-| Frontend      | React, Vite                  |
-| Backend       | Python, FastAPI              |
-| Embeddings    | OpenAI                       |
-| Vector Search | FAISS or Chroma              |
-| Deployment    | Vercel + Render              |
+- AI-generated subtopics and summaries
+- Expand any node to go deeper
+- Source links and saved research notes
+- Export and share mind maps
+- Persistent projects instead of in-memory data
+
+
+Tech Stack:
+ Area            | Tech                      
+ ----------------|-------------------------
+ Frontend        | React, Vite                 
+ Backend         | Python, FastAPI             
+ Embeddings      | sentence-transformers       
+ Vector Search   | FAISS                       
+ Future AI       | OpenAI API                  
+ Future Graph UI | React Flow
+
+
 
 Getting Started
 
-Clone the Repo
+Install backend dependencies:
 
 ```bash
-git clone https://github.com/zajaz-z/MindMapGPT.git
-cd MindMapGPT
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Install frontend dependencies:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend expects the backend at `http://127.0.0.1:8000`.
+
